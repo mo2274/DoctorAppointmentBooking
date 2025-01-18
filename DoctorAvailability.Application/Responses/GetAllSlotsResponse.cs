@@ -1,6 +1,5 @@
-﻿namespace DoctorAvailability.Application.Responses;
+﻿using DoctorAvailability.Data.Dtos;
 
-public class GetAllSlotsResponse
-{
-    
-}
+namespace DoctorAvailability.Application.Responses;
+
+public record GetAllSlotsResponse(List<SlotDto> Slots);

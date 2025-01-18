@@ -1,12 +1,3 @@
-﻿using FastEndpoints;
+﻿namespace DoctorAvailability.Application.Requests;
 
-namespace DoctorAvailability.BusinessLogic.Requests;
-
-public class PaginationRequest
-{
-    [FromQuery]
-    public int Page { get; set; }
-    
-    [FromQuery]
-    public int PageSize { get; set; }
-}
+public record PaginationRequest(int Page = 1, int PageSize = 10);

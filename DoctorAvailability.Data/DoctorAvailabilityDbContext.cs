@@ -1,12 +1,15 @@
 ﻿using System.Reflection;
+using DoctorAvailability.Data.Enitities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DoctorAvailability.Data;
 
-internal class DoctorAvailabilityDbContext : DbContext
+public class DoctorAvailabilityDbContext : DbContext
 {
     public DoctorAvailabilityDbContext(DbContextOptions<DoctorAvailabilityDbContext> options) : base(options)
     { }
+
+    public DbSet<Slot> Slots { get; set; }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

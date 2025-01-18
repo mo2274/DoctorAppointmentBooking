@@ -3,16 +3,15 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Dtos" />
-      <Folder Include="Services" />
+      <PackageReference Include="FastEndpoints" Version="5.33.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="FastEndpoints" Version="5.33.0" />
+      <ProjectReference Include="..\AppointmentBooking.Domain\AppointmentBooking.Domain.csproj" />
+      <ProjectReference Include="..\AppointmentBooking.Shared\AppointmentBooking.Shared.csproj" />
     </ItemGroup>
 
 </Project>

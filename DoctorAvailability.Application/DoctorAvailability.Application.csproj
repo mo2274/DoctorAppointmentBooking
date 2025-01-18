@@ -3,19 +3,15 @@
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Dtos" />
-      <Folder Include="Services" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\DoctorAvailability.Data\DoctorAvailability.Data.csproj" />
+      <ProjectReference Include="..\DoctorAvailability.Shared\DoctorAvailability.Shared.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="Ardalis.Result" Version="10.1.0" />
       <PackageReference Include="FastEndpoints" Version="5.33.0" />
     </ItemGroup>
 

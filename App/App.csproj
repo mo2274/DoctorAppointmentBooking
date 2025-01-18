@@ -10,6 +10,10 @@
     <ItemGroup>
         <PackageReference Include="FastEndpoints.Swagger" Version="5.33.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.5" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
@@ -21,6 +25,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\AppointmentBooking.Endpoints\AppointmentBooking.Endpoints.csproj" />
+      <ProjectReference Include="..\AppointmentBooking.Infrastructure\AppointmentBooking.Infrastructure.csproj" />
       <ProjectReference Include="..\DoctorAvailability.Endpoints\DoctorAvailability.Endpoints.csproj" />
     </ItemGroup>
 
