@@ -4,6 +4,7 @@ using AppointmentBooking.Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AppointmentBooking.Infrastructure.Database.Migrations
 {
     [DbContext(typeof(AppointmentBookingDbContext))]
-    partial class AppointmentBookingDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250123215252_add slot id to appointment")]
+    partial class addslotidtoappointment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
