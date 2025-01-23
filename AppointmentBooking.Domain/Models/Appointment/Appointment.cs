@@ -8,10 +8,10 @@ public class Appointment
     public DateTime ReservedAt { get; }
     public PatientName PatientName { get; }
     public AppointmentStatus Status { get; private set; }
-
-    public Appointment(Guid slotId, Guid patientId, string patientName, DateTime reservedAt, AppointmentStatus status = AppointmentStatus.Pending)
+    
+    public Appointment(Guid id, Guid slotId, Guid patientId, string patientName, DateTime reservedAt, AppointmentStatus status = AppointmentStatus.Pending)
     {
-        Id = Guid.NewGuid();
+        Id = id;
         SlotId = slotId;
         PatientId = patientId;
         PatientName = PatientName.Create(patientName);
@@ -21,7 +21,7 @@ public class Appointment
     
     public static Appointment Create(Guid slotId, Guid patientId, string patientName, DateTime reservedAt)
     {
-        var appointment = new Appointment(slotId, patientId, patientName, reservedAt);
+        var appointment = new Appointment(Guid.NewGuid(), slotId, patientId, patientName, reservedAt);
         
         if (appointment.Status == AppointmentStatus.Pending)
         {
@@ -45,11 +45,4 @@ public class Appointment
         // Raise event
     }
 
-}
-
-public enum AppointmentStatus
-{
-    Pending,
-    Confirmed,
-    Cancelled
 }

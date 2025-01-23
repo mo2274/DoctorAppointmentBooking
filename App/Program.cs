@@ -1,6 +1,9 @@
 using AppointmentBooking.Application.Extensions;
 using AppointmentBooking.Endpoints;
 using AppointmentBooking.Infrastructure.Extensions;
+using AppointmentConfirmation.Application.Extensions;
+using DoctorAppointmentBooking.Shared.Events;
+using DoctorAppointmentBooking.Shared.Messaging;
 using DoctorAppointmentManagement.Endpoints;
 using DoctorAppointmentManagement.Infrastructure.Extensions;
 using DoctorAvailability.Application.Extensions;
@@ -23,6 +26,9 @@ builder.Services.AddDoctorAvailabilityModuleServices(builder.Configuration);
 builder.Services.AddAppointmentBookingApplicationServices();
 builder.Services.AddAppointmentBookingInfrastructureServices(builder.Configuration);
 builder.Services.AddDoctorAppointmentManagementServices();
+builder.Services.AddAppointmentConfirmationServices();
+builder.Services.AddEvents();
+builder.Services.AddMessaging();
 
 var app = builder.Build();
 

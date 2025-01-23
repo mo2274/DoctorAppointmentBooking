@@ -5,4 +5,9 @@
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\DoctorAppointmentBooking.Shared\DoctorAppointmentBooking.Shared.csproj" />
+      <ProjectReference Include="..\DoctorAppointmentManagement.Shared\DoctorAppointmentManagement.Shared.csproj" />
+    </ItemGroup>
+
 </Project>

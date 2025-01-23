@@ -46,6 +46,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement.Infrastructure", "DoctorAppointmentManagement.Infrastructure\DoctorAppointmentManagement.Infrastructure.csproj", "{F1B82CDD-E73A-485C-A758-DDFECF0F448A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement.Shared", "DoctorAppointmentManagement.Shared\DoctorAppointmentManagement.Shared.csproj", "{138A8A8E-F89B-463A-B939-267E81FDA07D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -116,6 +118,10 @@ Global
 		{F1B82CDD-E73A-485C-A758-DDFECF0F448A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1B82CDD-E73A-485C-A758-DDFECF0F448A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1B82CDD-E73A-485C-A758-DDFECF0F448A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{138A8A8E-F89B-463A-B939-267E81FDA07D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{138A8A8E-F89B-463A-B939-267E81FDA07D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{138A8A8E-F89B-463A-B939-267E81FDA07D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{138A8A8E-F89B-463A-B939-267E81FDA07D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9CBB17CB-4E4A-487C-97EC-1CC049EBC095} = {1600FE3A-8EE7-49AB-A168-87DBF0973185}
@@ -140,5 +146,6 @@ Global
 		{8D2181D8-0CDE-40B6-8D55-4016F4CB6B66} = {D475615E-6B8E-43D0-B7C3-58251742B56C}
 		{924A3226-2058-4BCC-B4EB-9E585FB64C1E} = {D475615E-6B8E-43D0-B7C3-58251742B56C}
 		{F1B82CDD-E73A-485C-A758-DDFECF0F448A} = {D475615E-6B8E-43D0-B7C3-58251742B56C}
+		{138A8A8E-F89B-463A-B939-267E81FDA07D} = {D475615E-6B8E-43D0-B7C3-58251742B56C}
 	EndGlobalSection
 EndGlobal

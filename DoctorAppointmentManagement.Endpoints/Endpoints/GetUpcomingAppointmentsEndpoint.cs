@@ -5,11 +5,11 @@ using FastEndpoints;
 
 namespace DoctorAppointmentManagement.Endpoints.Endpoints;
 
-public class GetUpcomingAppointments : Endpoint<GetUpcomingAppointmentsRequest, GetUpcomingAppointmentsResponse>
+public class GetUpcomingAppointmentsEndpoint : Endpoint<GetUpcomingAppointmentsRequest, GetUpcomingAppointmentsResponse>
 {
     private readonly IAppointmentManagementService _appointmentManagementService;
 
-    public GetUpcomingAppointments(IAppointmentManagementService appointmentManagementService)
+    public GetUpcomingAppointmentsEndpoint(IAppointmentManagementService appointmentManagementService)
     {
         _appointmentManagementService = appointmentManagementService;
     }

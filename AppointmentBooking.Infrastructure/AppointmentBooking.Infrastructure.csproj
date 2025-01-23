@@ -14,6 +14,8 @@
       <ProjectReference Include="..\AppointmentBooking.Application\AppointmentBooking.Application.csproj" />
       <ProjectReference Include="..\AppointmentBooking.Domain\AppointmentBooking.Domain.csproj" />
       <ProjectReference Include="..\AppointmentBooking.Shared\AppointmentBooking.Shared.csproj" />
+      <ProjectReference Include="..\DoctorAppointmentBooking.Shared\DoctorAppointmentBooking.Shared.csproj" />
+      <ProjectReference Include="..\DoctorAppointmentManagement.Shared\DoctorAppointmentManagement.Shared.csproj" />
       <ProjectReference Include="..\DoctorAvailability.Shared\DoctorAvailability.Shared.csproj" />
     </ItemGroup>
 
