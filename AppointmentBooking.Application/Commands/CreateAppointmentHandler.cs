@@ -16,7 +16,5 @@ public class CreateAppointmentHandler
         var appointment = Appointment.Create(command.SlotId, command.PatientId, command.PatientName, command.ReservedAt);
         
         await _appointmentRepository.Add(appointment, cancellationToken);
-        
-        // publish events
     }
 }

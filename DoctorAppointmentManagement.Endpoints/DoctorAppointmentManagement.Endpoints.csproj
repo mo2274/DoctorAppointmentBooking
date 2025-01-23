@@ -6,4 +6,12 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="FastEndpoints" Version="5.33.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DoctorAppointmentManagement.Core\DoctorAppointmentManagement.Core.csproj" />
+    </ItemGroup>
+
 </Project>

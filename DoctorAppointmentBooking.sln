@@ -44,7 +44,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement.Endpoints", "DoctorAppointmentManagement.Endpoints\DoctorAppointmentManagement.Endpoints.csproj", "{924A3226-2058-4BCC-B4EB-9E585FB64C1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement.Infrastracture", "DoctorAppointmentManagement.Infrastracture\DoctorAppointmentManagement.Infrastracture.csproj", "{F1B82CDD-E73A-485C-A758-DDFECF0F448A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoctorAppointmentManagement.Infrastructure", "DoctorAppointmentManagement.Infrastructure\DoctorAppointmentManagement.Infrastructure.csproj", "{F1B82CDD-E73A-485C-A758-DDFECF0F448A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

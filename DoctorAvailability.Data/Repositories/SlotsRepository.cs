@@ -20,6 +20,7 @@ public class SlotsRepository
             .Slots
             .Select(s => new SlotDto()
             {
+                Id = s.Id,
                 Time = s.Time,
                 Cost = s.Cost,
                 IsReserved = s.IsReserved
@@ -45,7 +46,9 @@ public class SlotsRepository
             .Where(s => !s.IsReserved)
             .Select(s => new AvailableSlotDto()
             {
-               
+                Id = s.Id,
+                Time = s.Time,
+                Cost = s.Cost
             })
             .Skip((page - 1) * pageSize)
             .Take(pageSize)

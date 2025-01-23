@@ -19,6 +19,9 @@ public class AvailableSlotsService : IAvailableSlotsService
         
         return slots.Select(s => new SlotDto()
         {
+            Id = s.Id,
+            Time = s.Time,
+            Cost = s.Cost
         }).ToList();
     }
     
